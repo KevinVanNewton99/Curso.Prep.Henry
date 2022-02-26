@@ -280,6 +280,7 @@ function esVocal(letra){
    } else{
      "Dato incorrecto";
    }
+  }
 
 
 
