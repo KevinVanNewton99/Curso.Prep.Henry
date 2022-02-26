@@ -72,7 +72,7 @@ function sonIguales(x, y) {
   if ( x==y){
     return true;
   } else {
-    false;
+    return false;
   }
   
 }
@@ -108,7 +108,7 @@ function mayorQueCincuenta(num) {
   if (num > 50){
     return true;
   } else {
-    false;
+    return false;
   }
   
 }
@@ -267,20 +267,21 @@ function deEuroAdolar(euro){
 }
 
 
-function esVocal(letra){
+function esVocal(letra){ // volver a resolver el problema,ya que de la otra forma no salia el resultado
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-   if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
-     return "Es vocal";
-   } else if (letra.length >1) {
-     return "Dato incorrecto" ;
-   } else{
-     "Dato incorrecto";
-   }
+  if(letra.length > 1){
+    return "Dato incorrecto"
   }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
+
+}
 
 
 
